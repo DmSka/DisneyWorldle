@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisneyWorldle</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+</head>
+
+<body>
+    <div class="list-container">
+        <label for="ride-guess">Choose a ride to guess:</label>
+        <div id="ride-list">
+            
+        </div>
+    </div>
+
+    <div id="game">
+        <div class="grid1">
+            <div class="box tutorial">Name</div>
+            <div class="box tutorial">Park</div>
+            <div class="box tutorial">Land</div>
+            <div class="box tutorial">Type</div>
+            <div class="box tutorial">Height Requirement</div>
+            <div class="box tutorial">Opening Year</div>
+        </div>
+        <div class="grid">
+            
+        </div>
+    </div>
+
+    <!-- Victory popup (hidden by default) -->
+    <div id="victory-popup" class="popup-container" style="display: none;">
+        <div class="popup">
+            <audio id="myAudio">
+                <source src="final-fantasy-vii-victory-fanfare-1.mp3" type="audio/mp3">
+            </audio>
+            <h2>You win!</h2>
+            <p>Congratulations!</p>
+            <p>You've guessed the correct ride: <strong id="correct-ride-name"></strong></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <div id="lose-popup" class="popup-container" style="display: none;">
+        <div class="popup">
+            <audio id="myAudio2">
+                <source src="Mario Kart Wii Music - Finish Out & Losing Results (Race)-[AudioTrimmer.com].mp3" type="audio/mp3">
+            </audio>
+            <h2>You Lose.</h2>
+            <p>Better Luck Next Time.</p>
+            <p>The correct ride was: <strong id="correct-ride-name2"></strong></p>
+            <button id="play-again-btn2">Play Again</button>
+        </div>
+    </div>
+
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>
